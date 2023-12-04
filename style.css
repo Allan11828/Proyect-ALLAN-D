@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}  
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s, color 0.5s; /* Agregado para una transición suave */  
+}
+/* Estilos específicos para el modo oscuro */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Estilos específicos para el modo claro */
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+/* ... (otros estilos) */
+
+
+
+
+header{
+    padding: 30px;
+    text-align: center;
+    background: white;
+    color: black;
+}
+/* linea que separa el titulo del cuerpo de la pagina web*/
+.line { 
+    border-top: 1px solid black; 
+    width: 100%; 
+    margin-top: 20px;
+}
+.toggle .fas{
+    position: absolute;
+    right: 0;
+    color: #000;
+    font-size: 3rem;
+}
+
+
+.container1{
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+  
+ .container1 .containerBox1{
+    width: 500px;
+    height: auto;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.containerBox1 .title{    
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.containerBox1 .Question{
+    color: black;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.containerBox1 .text-main{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+ }
+
+.containerBox1 .button{
+    width: 100%;
+    height: auto;
+    background-color: Blue;
+    border-radius: 30px;
+    color: white;
+    border: 1px solid #4467B4;
+    font-size: 2rem;
+    padding: 15px;
+}
+
+.container1 .containerBox2{
+    padding: 15px;
+    width: 450px;
+    height: auto;
+    text-align: center;
+ }
+
+.containerBox2 img{
+  width: 100%;
+  height: auto;
+  
+}
+
+.container2{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+ .container2Box{
+    display: flex;
+    justify-content: center;
+    background-color: #FCFCFC;
+    width: 100%;
+}
+.box-generate{
+    width: 500px;
+    height: auto;   
+    background-color: #FCFCFC;
+    padding: 25px;
+    text-align: center;
+}
+title#2{
+  font-size: 2.5rem;
+  font-wieght: 400px;
+  mragin-bottom: 15px
+}
+.subtitle#2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.showpassword{
+   position: relative;
+    width: 500px;
+    margin-bottom: 15px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    padding: 35px;  
+}
+#copyIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 27px;
+    color: #4467B4;
+    font-size: 1.2rem;
+}
+
+/* Estilos del icono de copy al pasar encima el mouse*/
+#copyIcon:hover{
+    cursor: pointer;
+    transition: .3s;
+    color: gray;
+}
+#copyMessage {
+    color: #4467B4;
+    display: none;
+    position: absolute;
+    right: -60px; 
+    top: 0;
+} 
+
+.box-length{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+}
+
+/*Estilos para el rango*/
+#range{
+    width: 300px;
+}
+.configuration h2{
+    margin-bottom: 10px;
+}
+
+/* Estilos de los cuadros de caracteres*/
+.capitalize, .lowercase, .numbers, .symbols{
+    width: 400px;
+    margin-bottom: 10px;
+    background-color: #f1f1f1;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.toggle-icons {
+    display: flex;
+}
+
+.button-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* Estilos de tamaño y color para los iconos*/
+.activate, .desactivate{
+    color: #4467B4;
+    font-size: 2rem;
+  
+ }
+  .button-box{
+    display:  center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.button-password{
+    width: 350px;
+    height: auto;
+    background-color: #4467B4;
+    border-radius: 30px;
+    color: white;
+    border: 5px solid #4467B4;
+    font-size: 2rem;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Estilos del button de generar contraseña al pasar encima el mouse*/
+.button-password:hover{
+    background-color: #090909;
+    border: 1px solid #4467B4;
+    cursor: pointer;
+    transition: .3s;
+ }

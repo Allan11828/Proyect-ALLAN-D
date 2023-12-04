@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <title id="TITLE">MAKE<span style="color:blue;">PASS</span>WORD</title>
+</head>
+<body>
+<header>
+  
+    <h1 id=TITLE> MAKE<span style="color:blue;">PASS</span>WORD </H1>
+
+ </header>
+
+  <hr id="Line">
+<!-- Cuerpo de la pagina principal -->
+       
+    </div>
+
+  <section class="container1">
+ 
+    <div class= "containerBox1">
+      
+         <h2 class="title" style="color: Blue;"> Password Generador</h2>
+         <h2 class="Question"> Do you want to generate a new secure password? </h2>
+        
+         <p class="Text-Main"> Create a secure password to use in your favorite apps </p>
+         <button class="button" type="submit">Create a new password</button>
+    </div>
+      
+    <div class="containerBox2">
+         <img class="Password" src="https://filestore.community.support.microsoft.com/api/images/6be2f6f8-a6d4-4a26-a82b-8f05f9146f1d?upload=true" alt="Picture of password"> 
+    </div> 
+  </section>
+
+  <section class="container2">
+ 
+      <div class="container2Box">
+        <div class = "box-generate"> 
+          <h1 class= "title#2">Generate Password</h1>
+           <p class= "subtitle#3"> Create a secure password to protect your digital privacy</p>
+         </div>
+       </div>
+    
+    <div class="showpassword">
+        <span id="passwordcopy"></span>
+        <i id="copyIcon" class="fas fa-copy"></i>        
+        <span id="copyMessage">Copied!</span>           
+     </div>
+    
+     <div class="generate-password">
+          <div class="length">
+                  <!-- Configuración de longitud -->
+                  <p style="font-weight: bold;">Length: <span id="number-length"></span></p>
+                  <div class="box-length">
+                  <span  style="font-weight: bold;" id="number-min">4</span>
+                  <input type="range" min="4" max="32" id="range">
+                  <span style="font-weight: bold;" id="number-max">32</span>
+                  </div>
+           </div>
+      </div>
+ <div class="configuration">
+                <!-- Configuración de caracteres -->
+                <h2>Configuration</h2>
+                <!-- Toggle de caracteres mayusculas-->
+                <div class="capitalize">
+                    <p>Include Capitalized Character</p>
+                    <div class="toggle-icons">
+                        <i id="oncapitalize" class="fas fa-toggle-on activate"></i>
+                        <i id="offcapitalize" class="fas fa-toggle-off desactivate"></i>
+                    </div>
+                </div>
+                <!-- Toggle de caracteres minusculas-->
+                <div class="lowercase">
+                    <p>Include Lowercase Character</p>
+                    <div class="toggle-icons">
+                        <i id="onlowercase" class="fas fa-toggle-on activate"></i>
+                        <i id="offlowercase" class="fas fa-toggle-off desactivate"></i>
+                    </div>
+                </div>
+                <!-- Toggle de numeros -->
+                <div class="numbers">
+                    <p>Include Numbers</p>
+                    <div class="toggle-icons">
+                        <i id="onnumbers"onclick= "activateDarkMode()" class="fas fa-toggle-on activate"></i>
+                        <i id="offnumbers" onclick= "activateLigthMode()" class="fas fa-toggle-off desactivate"></i>
+                    </div>
+                </div>
+                <!-- Toggle de simbolos -->
+                <div class="symbols">
+                    <p>Include Symbols</p>
+                    <div class="toggle-icons">
+                        <i id="onsymbols" class="fas fa-toggle-on activate"></i>
+                        <i id="offsymbols" class="fas fa-toggle-off desactivate"></i>
+                    </div>
+                </div>
+                <div class="button-box">
+                    <!-- Botón para generar contraseña -->
+                    <button class="button-password" type="button">Generate password</button>
+                </div>
+            </div>
+        </div>   
+  </section>
+ </body>
+</HTML>
